@@ -1,0 +1,14 @@
+{
+  "name": "awsm-stripe-webhook",
+  "version": "0.0.1",
+  "location": "https://github.com/eahefnawy/awsm-stripe-webhook",
+  "author": "Eslam A. Hefnawy <eahefnawy@gmail.com>",
+  "description": "JAWS package/API endpint/Webhook for your stripe notifications",
+  "resources": {
+    "cloudFormation": {
+      "LambdaIamPolicyDocumentStatements": [],
+      "ApiGatewayIamPolicyDocumentStatements": [],
+      "Resources": {}
+    }
+  }
+}
