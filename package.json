@@ -3,15 +3,12 @@
   "version": "0.0.1",
   "description": "JAWS package/API endpint/Webhook for your stripe notifications",
   "author": "Eslam A. Hefnawy <eahefnawy@gmail.com>",
-  "license": "",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/eahefnawy/awsm-stripe-webhook"
   },
   "keywords": ["JAWS", "AWSM", "AWS API endpint", "Stripe", "Webhook"],
   "devDependencies": {},
-  "dependencies": {
-    "stripe": "^4.0.0",
-    "bluebird": "^2.10.1"
-  }
+  "dependencies": {}
 }
