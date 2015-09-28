@@ -21,28 +21,26 @@
     }
   },
   "apiGateway": {
+    "deploy": false,
     "cloudFormation": {
       "Type": "AWS",
       "Path": "webhooks/stripe",
-      "Method": "GET",
+      "Method": "POST",
       "AuthorizationType": "none",
       "ApiKeyRequired": false,
-      "RequestTemplates": {
-        "application/json": "{\"url\":\"$util.urlDecode($input.params('url'))\"}"
-      },
-      "RequestParameters": {
-        "integration.request.querystring.integrationQueryParam": "method.request.querystring.url"
-      },
+      "RequestTemplates": {},
+      "RequestParameters": {},
       "CacheNamespace": "String",
       "CacheKeyParameters": [],
       "Responses": {
-        "2//d{2}": {
+        "400": {
+          "statusCode": "400"
+        },
+        "default": {
           "statusCode": "200",
-          "responseParameters": {
-            "method.response.header.test-method-response-header": "integration.response.header.integrationResponseHeaderParam1"
-          },
+          "responseParameters": {},
           "responseTemplates": {
-            "application/json": "json 200 response template"
+            "application/json": ""
           }
         }
       }
