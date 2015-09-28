@@ -14,5 +14,5 @@ exports.run = function(event, context, cb) {
    *
    *
   */
-  console.log(event);
+  return cb(null, {"data": "YESS"});
 };
