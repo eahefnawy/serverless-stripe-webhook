@@ -21,7 +21,7 @@
     }
   },
   "apiGateway": {
-    "deploy": false,
+    "deploy": true,
     "cloudFormation": {
       "Type": "AWS",
       "Path": "webhooks/stripe",
