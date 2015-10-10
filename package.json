@@ -1,7 +1,7 @@
 {
   "name": "awsm-stripe-webhook",
   "version": "0.0.1",
-  "description": "JAWS package/API endpint/Webhook for your stripe notifications",
+  "description": "AWSM Stripe endpint/Webhook for your JAWS projects.",
   "author": "Eslam A. Hefnawy <eahefnawy@gmail.com>",
   "license": "MIT",
   "repository": {
@@ -9,6 +9,7 @@
     "url": "https://github.com/eahefnawy/awsm-stripe-webhook"
   },
   "keywords": ["JAWS", "AWSM", "AWS API endpint", "Stripe", "Webhook"],
-  "devDependencies": {},
-  "dependencies": {}
+  "scripts": {
+    "postinstall" : "jaws postinstall awsm-stripe-webhook npm"
+  }
 }
