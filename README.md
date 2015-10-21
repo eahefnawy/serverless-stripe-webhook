@@ -1,6 +1,6 @@
 # 💳 awsm-stripe-webhook
 
-In your JAWS project root directory, run: 
+In your JAWS project root directory, run:  
 
 ```
 npm install awsm-stripe-webhook
