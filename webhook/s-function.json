@@ -1,0 +1,39 @@
+{
+  "functions": {
+    "Sl-stripe-webhookWebhook": {
+      "custom": {
+        "excludePatterns": [],
+        "envVars": []
+      },
+      "handler": "modules/sl-stripe-webhook/webhook/handler.handler",
+      "timeout": 6,
+      "memorySize": 1024,
+      "endpoints": {
+        "sl-stripe-webhook/webhook": {
+          "method": "POST",
+          "authorizationType": "none",
+          "apiKeyRequired": false,
+          "requestParameters": {},
+          "requestTemplates": {
+            "application/json": ""
+          },
+          "responses": {
+            "400": {
+              "statusCode": "400"
+            },
+            "default": {
+              "statusCode": "200",
+              "responseParameters": {},
+              "responseModels": {},
+              "responseTemplates": {
+                "application/json": ""
+              }
+            }
+          }
+        }
+      },
+      "pathFunction": "/Users/eslam/serverless-stuff/real-projects/sandbox/back/modules/sl-stripe-webhook/webhook/s-function.json",
+      "name": "webhook"
+    }
+  }
+}
