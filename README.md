@@ -11,7 +11,7 @@ open `<serverelss project name>/back/modules/sl-stripe-webhook/lib/index.js` and
 when you're done, deploy with:
 
 ```
-serverless function deploy
-serverless endpoint deploy
+sls function deploy
+sls endpoint deploy
 ```
 After deployment, add this webhook URL to Stripe: `<endpoint>/webhooks/stripe`, and test it out!
